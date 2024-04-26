@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png" />
+    <title>Coding Assesment L2 boilerplate</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Your code goes here -->
+    <div class="container">
+      <main>
+        <section class="thumbnails">
+          <div class="big-img">
+            <img
+              src="C:\Users\abhil\Downloads\Rectangle 4.png"
+              alt="product"
+              class="main-thumbnail invisible-mob" />
+          </div>
+          <div class="mobile-thumb hidden">
+            <img
+              src="./images/Rectangle 8.png"
+              class="thumb-mob"
+              alt="product" />
+          </div>
+          <div>
+            <div class="preview">
+              <img
+                class="selected"
+                src="./images/Rectangle 8.png"
+                alt=""
+                onclick="showImg(this.src)" />
+              <img
+                src="./images/Rectangle 7.png"
+                onclick="showImg(this.src)"
+                alt="" />
+              <img
+                src="./images/Rectangle 8.png"
+                onclick="showImg(this.src)"
+                alt="" />
+              <img
+                src="./images/Rectangle 5.png"
+                onclick="showImg(this.src)"
+                alt="" />
+            </div>
+          </div>
+        </section>
+        <!-- content -->
+        <section class="content">
+          <p class="company">Marmeto</p>
+          <h1 class="title">Embrace dsdsdSideboard</h1>
+          <div class="price">
+            <div class="new-price">
+              <p class="now">$12999.00</p>
+              <span>35% Off</span>
+            </div>
+            <p class="old-price">$19999.00</p>
+          </div>
+          <div class="color-picker">
+            <p>Choose a Color</p>
+            <input type="radio" name="color" id="yellow" value="yellow" />
+            <label for="yellow"><span class="yellow"></span></label>
+
+            <input type="radio" name="color" id="green" />
+            <label for="green"><span class="green"></span></label>
+
+            <input type="radio" name="color" id="blue" />
+            <label for="blue"><span class="blue"></span></label>
+
+            <input type="radio" name="color" id="pink" />
+            <label for="pink"><span class="pink"></span></label>
+          </div>
+
+          <div class="form-box">
+            <p>Choose a Size</p>
+            <div>
+              <label class="label">
+                <input type="radio" name="kk" />
+                <div class="circle"></div>
+                <span class="size">Small</span>
+              </label>
+              <label class="label">
+                <input type="radio" name="kk" />
+                <div class="circle"></div>
+                <span class="size">Medium</span>
+              </label>
+              <label class="label">
+                <input type="radio" name="kk" />
+                <div class="circle"></div>
+                <span class="size">Large</span>
+              </label>
+              <label class="label">
+                <input type="radio" name="kk" />
+                <div class="circle"></div>
+                <span class="size">Extra Large</span>
+              </label>
+              <label class="label">
+                <input type="radio" name="kk" />
+                <div class="circle"></div>
+                <span class="size">XXL</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="all-items">
+            <div class="buttons">
+              <div class="amount-btn">
+                <button id="minus" onclick="handleMinus()">
+                  <img src="./images/icon-minus.svg" alt="minus" />
+                </button>
+                <p class="amount">0</p>
+                <button id="plus" onclick="handlePlus()">
+                  <img src="./images/icon-plus.svg" alt="plus" />
+                </button>
+              </div>
+              <button class="add_btn" onclick="addItem()">
+                <img src="./images/icon-cart.svg" alt="cart" />
+                Add to cart
+              </button>
+            </div>
+            <div id="headline">
+              <p class="para">
+                Embrace Sideboard with Color Yellow and Size Small added to cart
+              </p>
+            </div>
+          </div>
+          <p class="info">
+            The Embrace Sideboard is a stylish wear. With a top cloth designed
+            to provide superior protection and look great, this storage solution
+            is both functional and attractive. It fits seamlessly into any home
+            decor, with clean lines and a timeless look. Crafted from premium
+            materials for a combination of style, durability, and reliability.
+          </p>
+        </section>
+      </main>
+    </div>
+    <!-- Happy coding 😊 -->
+    <script src="./script.js"></script>
+  </body>
+</html>
